@@ -55,3 +55,12 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_41CD749FCB08444EB99615DA9AC221DF }}
           package: .
+
+      - name: Deploy to Azure Web App (test)
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'ollyappservice'
+          slot-name: 'test'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_41CD749FCB08444EB99615DA9AC221DF }}
+          package: .
