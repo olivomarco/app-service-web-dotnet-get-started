@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'ollyappservice'
           slot-name: 'test'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_41CD749FCB08444EB99615DA9AC221DF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_41CD749FCB08444EB99615DA9AC221DF_test }}
           package: .
