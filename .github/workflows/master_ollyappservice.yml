@@ -57,7 +57,7 @@ jobs:
           package: .
 
       - name: Deploy to Azure Web App (test)
-        id: deploy-to-webapp
+        id: deploy-to-webapp-test
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'ollyappservice'
